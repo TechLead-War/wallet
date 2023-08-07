@@ -3,7 +3,7 @@
 -- Create Users Table
 CREATE TABLE users (
     id SERIAL PRIMARY KEY,
-    customer_xid VARCHAR(50) NOT NULL,
+    customer_xid VARCHAR(50) NOT NULL UNIQUE,
     token VARCHAR(50) NOT NULL
 );
 
