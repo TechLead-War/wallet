@@ -1,0 +1,6 @@
+{
+  "DB_NAME": "miniWallet",
+  "DB_USER": "postgres",
+  "DB_PASS": "Draipe",
+  "DB_URL": "postgres://postgres:Draipe@localhost:5432/miniWallet"
+}

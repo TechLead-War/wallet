@@ -1,0 +1,2 @@
+database: postgres://postgres:draipe@localhost:5432/miniWallet
+migrations_dir: ./migrations
