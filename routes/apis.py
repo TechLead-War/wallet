@@ -9,6 +9,7 @@ from managers.orm_wrappers import ORMWrapper
 from models.users import Users
 
 user = Blueprint("user", url_prefix='api/v1')
+wallet = Blueprint("wallet", url_prefix='api/v1')
 
 
 @user.route('/init', methods=['POST'])
@@ -35,14 +36,13 @@ async def init(request: Request):
 
     except ValueError as ex:
         result_json = {
-            "data": {
-                "error": {
-                    "customer_xid": [str(ex)]
-                }
-            },
-            "status": "fail"
+            "error": {
+                "customer_xid": [
+                    "Missing data for required field."
+                ]
+            }
         }
-        return response.json(result_json, status=400)
+        return await send_response(data=result_json, status_code=HTTPStatusCodes.BAD_REQUEST.value)
 
     except IntegrityError as e:
         result_json = {
@@ -53,3 +53,6 @@ async def init(request: Request):
             }
         }
         return await send_response(data=result_json, status_code=HTTPStatusCodes.BAD_REQUEST.value)
+
+
+async
