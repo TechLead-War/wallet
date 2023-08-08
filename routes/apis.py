@@ -1,41 +1,55 @@
 import uuid
 from sanic import Blueprint, response
 from sanic.request import Request
+from tortoise.exceptions import IntegrityError
 
+from constants.enums import HTTPStatusCodes
+from managers.helpers import send_response
 from managers.orm_wrappers import ORMWrapper
 from models.users import Users
 
-user = Blueprint("user")
+user = Blueprint("user", url_prefix='api/v1')
 
 
-@user.route('/api/v1/init', methods=['POST'])
+@user.route('/init', methods=['POST'])
 async def init(request: Request):
     try:
-        data = request.json
-        customer_xid = data.get('customer_xid')
-
         new_token = str(uuid.uuid4())
 
-        # create user in our database
+        data = request.json
+        if not data or not isinstance(data, dict) or not data.get('customer_xid'):
+            raise ValueError('Missing or invalid data for required field.')
+
+        customer_xid = data['customer_xid']
+
+        # Create user in the database
         await ORMWrapper.create(Users, {
             "customer_xid": customer_xid,
             "token": new_token
         })
-
         result_json = {
-            "data": {
-                "token": new_token
-            },
-            "status": "success"
+            "token": "Token " + new_token,
         }
 
-        return response.json(result_json)
+        return await send_response(data=result_json, status_code=HTTPStatusCodes.CREATED.value)
 
-    except Exception as e:
+    except ValueError as ex:
         result_json = {
             "data": {
-                "message": str(e)
+                "error": {
+                    "customer_xid": [str(ex)]
+                }
             },
-            "status": "error"
+            "status": "fail"
         }
-        return response.json(result_json)
+        return response.json(result_json, status=400)
+
+    except IntegrityError as e:
+        result_json = {
+            "error": {
+                "customer_xid": [
+                    "Missing data for required field."
+                ]
+            }
+        }
+        return await send_response(data=result_json, status_code=HTTPStatusCodes.BAD_REQUEST.value)

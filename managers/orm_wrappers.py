@@ -2,6 +2,7 @@ from enum import Enum
 
 from tortoise import Tortoise
 from tortoise.contrib.postgres.functions import Random
+from tortoise.exceptions import IntegrityError
 
 
 class ORMConstant(Enum):
@@ -12,13 +13,13 @@ class ORMConstant(Enum):
 class ORMWrapper:
     @classmethod
     async def get_by_filters(
-        cls,
-        model,
-        filters,
-        order_by=None,
-        only=None,
-        limit=ORMConstant.DEFAULT_LIMIT.value,
-        offset=ORMConstant.DEFAULT_OFFSET.value,
+            cls,
+            model,
+            filters,
+            order_by=None,
+            only=None,
+            limit=ORMConstant.DEFAULT_LIMIT.value,
+            offset=ORMConstant.DEFAULT_OFFSET.value,
     ):
         """
             :param offset: no. of rows to skip
@@ -53,7 +54,7 @@ class ORMWrapper:
 
     @classmethod
     async def update_with_filters(
-        cls, row, model, payload, where_clause=None, update_fields=None
+            cls, row, model, payload, where_clause=None, update_fields=None
     ):
         """
         :param row: database model instance which needs to be updated
@@ -75,14 +76,13 @@ class ORMWrapper:
 
     @classmethod
     async def create(cls, model, payload):
-        """
-            :param model: db model
-            :param payload: create payload
-            :return: model instance
-        """
-
-        row = await model.create(**payload)
-        return row
+        try:
+            row = await model.create(**payload)
+            return row
+        except IntegrityError as e:
+            # Handle the unique constraint violation here
+            # You can choose to return an error response or take other actions
+            raise IntegrityError("Duplicate entry: Unique constraint violation") from e
 
     @classmethod
     async def get_or_create_object(cls, model, payload, defaults=None):
@@ -124,7 +124,7 @@ class ORMWrapper:
 
     @classmethod
     async def get_by_filters_count(
-        cls, model, filters, order_by=None, limit=None, offset=None
+            cls, model, filters, order_by=None, limit=None, offset=None
     ):
         """
         :param model: database model class
