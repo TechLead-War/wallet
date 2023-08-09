@@ -175,6 +175,14 @@ ALTER TABLE ONLY public.users
 
 
 --
+-- Name: wallet wallet_customer_xid_key; Type: CONSTRAINT; Schema: public; Owner: -
+--
+
+ALTER TABLE ONLY public.wallet
+    ADD CONSTRAINT wallet_customer_xid_key UNIQUE (customer_xid);
+
+
+--
 -- Name: wallet wallet_pkey; Type: CONSTRAINT; Schema: public; Owner: -
 --
 

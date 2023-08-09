@@ -11,7 +11,7 @@ CREATE TABLE users (
 CREATE TABLE wallet (
     id SERIAL PRIMARY KEY,
     amount INT,
-    customer_xid VARCHAR(50) NOT NULL,
+    customer_xid VARCHAR(50) NOT NULL UNIQUE,
     enabled_at TIME,
     is_enabled BOOLEAN DEFAULT FALSE,
     FOREIGN KEY (customer_xid) REFERENCES users (customer_xid)

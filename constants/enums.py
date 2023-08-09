@@ -11,3 +11,8 @@ class HTTPStatusCodes(Enum):
     MOVED_TEMPORARILY = 302
     INTERNAL_SERVER_ERROR = 500
     REQUEST_TIMEOUT = 408
+
+
+class WalletStatus(Enum):
+    ENABLED = True
+    DISABLED = False
