@@ -90,13 +90,13 @@ def exceptions_handler(func):
 
         except IntegrityError as ex:
             result_json = {
-                "error": "Already enabled"
+                "error": str(ex)
             }
             return await send_response(data=result_json, status_code=HTTPStatusCodes.BAD_REQUEST.value)
 
         except OperationalError as ex:
             result_json = {
-                "error": "Invalid token!!!"
+                "error": str(ex)
             }
             return await send_response(data=result_json, status_code=HTTPStatusCodes.BAD_REQUEST.value)
 

@@ -21,13 +21,13 @@ CREATE TABLE wallet (
 CREATE TABLE transactions (
     id SERIAL PRIMARY KEY,
     amount INT,
+    final_amount INT,
     status VARCHAR(50),
     transaction_time TIMESTAMPTZ DEFAULT CURRENT_TIMESTAMP,
     transaction_from VARCHAR(50) NOT NULL,
     transaction_to VARCHAR(50) NOT NULL,
+    transaction_type VARCHAR(50) NOT NULL,
     reference_id VARCHAR(50),
-    FOREIGN KEY (transaction_from) REFERENCES users (customer_xid),
-    FOREIGN KEY (transaction_to) REFERENCES users (customer_xid)
 );
 
 -- migrate:down

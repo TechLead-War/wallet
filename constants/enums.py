@@ -16,3 +16,10 @@ class HTTPStatusCodes(Enum):
 class WalletStatus(Enum):
     ENABLED = True
     DISABLED = False
+
+
+class TransactionStatus(Enum):
+    SUCCESS = "success"
+    FAILED = "failed"
+    WITHDRAWAL = "withdrawal"
+    DEPOSIT = "deposit"
