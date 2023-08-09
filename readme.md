@@ -1,3 +1,4 @@
+# Steps to install - 
 1. Install sanic - pip install sanic
 2. You may need to install scoop if not installed (windows command line installer)
    Set-ExecutionPolicy RemoteSigned -Scope CurrentUser # Optional: Needed to run a remote script the first time
@@ -7,9 +8,10 @@
 5. dbmate -u 'postgres://<db_user>:<db_pass>@localhost:<port>/<db_name>?sslmode=disable' up
 
 
-Run app - sanic service:app --debug --reload
+### Run app - `sanic service:app --debug --reload`
 
-Postman collection - https://grey-rocket-908358.postman.co/workspace/Draipe~55b64f49-0be6-4066-bb02-d3449e1b12eb/collection/12799932-f5b0a6b7-dbcf-4291-81cd-9fd8f6216f4d?action=share&creator=12799932
+# Postman collection -
+https://grey-rocket-908358.postman.co/workspace/Draipe~55b64f49-0be6-4066-bb02-d3449e1b12eb/collection/12799932-f5b0a6b7-dbcf-4291-81cd-9fd8f6216f4d?action=share&creator=12799932
 
 ![Screenshot 2023-08-09 124201](https://github.com/TechLead-War/wallet/assets/53389091/39073c4b-4565-42ad-95ff-102f91cd2b39)
 
