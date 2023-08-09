@@ -11,7 +11,8 @@ Run app - sanic service:app --debug --reload
 
 ![Screenshot 2023-08-09 124201](https://github.com/TechLead-War/wallet/assets/53389091/39073c4b-4565-42ad-95ff-102f91cd2b39)
 
-
+Schema - 
+```
 Table users {
   id integer [primary key]
   customer_xid string
@@ -42,5 +43,5 @@ Ref: users.customer_xid - wallet.customer_xid // many-to-one
 Ref: users.customer_xid < transactions.transaction_from // many-to-one
 Ref: users.customer_xid < transactions.transaction_to // many-to-one 
 
-
+```
 Note: This service is using tortoise-ORM for database interaction.
