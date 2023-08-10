@@ -29,10 +29,12 @@ CREATE TABLE public.schema_migrations (
 CREATE TABLE public.transactions (
     id integer NOT NULL,
     amount integer,
+    final_amount integer,
     status character varying(50),
     transaction_time timestamp with time zone DEFAULT CURRENT_TIMESTAMP,
     transaction_from character varying(50) NOT NULL,
     transaction_to character varying(50) NOT NULL,
+    transaction_type character varying(50) NOT NULL,
     reference_id character varying(50)
 );
 
@@ -188,22 +190,6 @@ ALTER TABLE ONLY public.wallet
 
 ALTER TABLE ONLY public.wallet
     ADD CONSTRAINT wallet_pkey PRIMARY KEY (id);
-
-
---
--- Name: transactions transactions_transaction_from_fkey; Type: FK CONSTRAINT; Schema: public; Owner: -
---
-
-ALTER TABLE ONLY public.transactions
-    ADD CONSTRAINT transactions_transaction_from_fkey FOREIGN KEY (transaction_from) REFERENCES public.users(customer_xid);
-
-
---
--- Name: transactions transactions_transaction_to_fkey; Type: FK CONSTRAINT; Schema: public; Owner: -
---
-
-ALTER TABLE ONLY public.transactions
-    ADD CONSTRAINT transactions_transaction_to_fkey FOREIGN KEY (transaction_to) REFERENCES public.users(customer_xid);
 
 
 --

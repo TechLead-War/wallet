@@ -1,5 +1,7 @@
+from datetime import datetime, date
 from functools import wraps
-
+from uuid import UUID
+from uuid import UUID as base_uuid
 from sanic import json, response
 from tortoise.exceptions import OperationalError, IntegrityError
 
@@ -74,12 +76,19 @@ def wallet_response_formatter(user_details: dict, wallet_details: dict):
     }
 
 
-def dict_to_model_instance(data_dict, model_class):
-    model_instance = model_class()
-    for key, value in data_dict.items():
-        if hasattr(model_instance, key):
-            setattr(model_instance, key, value)
-    return model_instance
+def to_string(result):
+    for key in result:
+        if type(result[key]) == datetime:
+            result[key] = str(result[key])
+        if type(result[key]) == date:
+            result[key] = str(result[key])
+        if type(result[key]) == UUID:
+            result[key] = str(result[key])
+        if type(result[key]) == bool:
+            result[key] = str(result[key])
+        if type(result[key]) == base_uuid:
+            result[key] = str(result[key])
+    return result
 
 
 def exceptions_handler(func):

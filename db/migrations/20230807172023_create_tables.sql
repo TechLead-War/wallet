@@ -27,7 +27,7 @@ CREATE TABLE transactions (
     transaction_from VARCHAR(50) NOT NULL,
     transaction_to VARCHAR(50) NOT NULL,
     transaction_type VARCHAR(50) NOT NULL,
-    reference_id VARCHAR(50),
+    reference_id VARCHAR(50) UNIQUE
 );
 
 -- migrate:down

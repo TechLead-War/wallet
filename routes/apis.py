@@ -1,15 +1,12 @@
 import uuid
-from datetime import datetime
-
-from sanic import Blueprint, response
+from sanic import Blueprint
 from sanic.request import Request
-from tortoise.exceptions import IntegrityError, ValidationError, OperationalError
+from tortoise.exceptions import IntegrityError
 
 from constants.enums import HTTPStatusCodes, WalletStatus
 from managers.helpers import send_response
 from managers.orm_wrappers import ORMWrapper
 from models.users import Users
-from models.wallet import Wallet
 
 user = Blueprint("user", url_prefix='api/v1')
 

@@ -1,16 +1,14 @@
 from datetime import datetime
 
-import pytz
-from sanic import Blueprint, response
+from sanic import Blueprint
 from sanic.request import Request
-from tortoise.exceptions import IntegrityError, OperationalError
+from tortoise.exceptions import OperationalError
 
 from constants.enums import HTTPStatusCodes, WalletStatus, TransactionStatus
 from managers.helpers import send_response, get_user_details, exceptions_handler, wallet_response_formatter, \
-    get_wallet_details, dict_to_model_instance
+    get_wallet_details, to_string
 from managers.orm_wrappers import ORMWrapper
 from models import Transactions
-from models.users import Users
 from models.wallet import Wallet
 
 wallet = Blueprint("wallet", url_prefix='api/v1')
@@ -129,8 +127,10 @@ async def get_wallet_transactions(request: Request):
     transaction_details = await ORMWrapper.get_by_filters(Transactions, {
         "transaction_from": user_details.get("customer_xid")
     })
-    transaction_details = transaction_details[0].__dict__
-    return send_response(data=transaction_details)
+    transaction_details_json = []
+    for details in transaction_details:
+        transaction_details_json.append(to_string(details.__dict__))
+    return await send_response(data=transaction_details_json)
 
 
 # Add virtual money to my wallet
@@ -191,7 +191,9 @@ async def add_wallet_balance(request: Request):
         "transaction_time": datetime.now(),
         "transaction_from": user_details.get("customer_xid"),
         "transaction_to": "self",
-        "reference_id": reference_id
+        "transaction_type": TransactionStatus.DEPOSIT.value,
+        "reference_id": reference_id,
+        "final_amount": final_amount
     })
     transaction_details = transaction_details.__dict__
     result_data = {
