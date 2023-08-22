@@ -37,14 +37,20 @@ async def init_wallet(request: Request):
     # if wallet of this user is already active return failure.
     auth_token = request.headers.get("Authorization")
     user_details = await get_user_details(auth_token)
+    status_code = HTTPStatusCodes.CREATED.value
+    result_json = {}
 
     # check if wallet already present with this customer_xid
     wallet_instance = await ORMWrapper.get_by_filters(Wallet, {
         "customer_xid": user_details.get("customer_xid")
     })
-    wallet_instance = {}
     if wallet_instance:
         wallet_details = wallet_instance[0].__dict__
+        if wallet_details.get("is_enabled"):
+            status_code = HTTPStatusCodes.BAD_REQUEST.value
+            result_json = {
+                "data": "Already enabled!"
+            }
         await ORMWrapper.update_with_filters(
             wallet_instance[0],
             Wallet,
@@ -56,12 +62,12 @@ async def init_wallet(request: Request):
         # Create wallet for the user in database
         wallet_details = await ORMWrapper.create(Wallet, {
             "is_enabled": True,
-            "amount": 110,
+            "amount": 0,
             "customer_xid": user_details.get("customer_xid"),
             "enabled_at": datetime.now(),
         })
-    result_json = wallet_response_formatter(user_details, wallet_details.__dict__)
-    return await send_response(data=result_json, status_code=HTTPStatusCodes.CREATED.value)
+        result_json = wallet_response_formatter(user_details, wallet_details.__dict__)
+    return await send_response(data=result_json, status_code=status_code)
 
 
 @wallet.route('/wallet', methods=['GET'])

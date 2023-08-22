@@ -1,0 +1,406 @@
+Request method: GET
+Request Host: 127.0.0.1:8000
+Request URL: http://127.0.0.1:8000/
+Request headers: <Header('user-agent': 'PostmanRuntime/7.32.3', 'accept': '*/*', 'postman-token': '0edadc70-70d0-4462-94a9-aab172c0697a', 'host': '127.0.0.1:8000', 'accept-encoding': 'gzip, deflate, br', 'connection': 'keep-alive')>
+Request data: None
+Request time: 2023-08-21 23:52:36.418144
+
+Request method: POST
+Request Host: 127.0.0.1:8000
+Request URL: http://127.0.0.1:8000/api/v1/init
+Request headers: <Header('content-type': 'application/json', 'user-agent': 'PostmanRuntime/7.32.3', 'accept': '*/*', 'postman-token': 'e651e1d1-99d0-48f4-b9ea-fc9c68c977c6', 'host': '127.0.0.1:8000', 'accept-encoding': 'gzip, deflate, br', 'connection': 'keep-alive', 'content-length': '47')>
+Request data: {'customer_xid': '1d22se2df28w81d2d3w'}
+Request time: 2023-08-21 23:53:11.817558
+
+Request method: POST
+Request Host: 127.0.0.1:8000
+Request URL: http://127.0.0.1:8000/api/v1/wallet
+Request headers: <Header('authorization': 'Token d400aeab-be3a-412b-92f9-ee0969c1d3ab', 'user-agent': 'PostmanRuntime/7.32.3', 'accept': '*/*', 'postman-token': 'bcf84d9b-c5be-4c11-817a-b496ded16075', 'host': '127.0.0.1:8000', 'accept-encoding': 'gzip, deflate, br', 'connection': 'keep-alive', 'content-length': '0')>
+Request data: None
+Request time: 2023-08-21 23:54:09.355962
+
+Request method: GET
+Request Host: 127.0.0.1:8000
+Request URL: http://127.0.0.1:8000/api/v1/wallet
+Request headers: <Header('authorization': 'Token d400aeab-be3a-412b-92f9-ee0969c1d3ab', 'user-agent': 'PostmanRuntime/7.32.3', 'accept': '*/*', 'postman-token': '4393c210-6c68-41c8-b519-f5df8afd7e66', 'host': '127.0.0.1:8000', 'accept-encoding': 'gzip, deflate, br', 'connection': 'keep-alive')>
+Request data: None
+Request time: 2023-08-21 23:56:43.470181
+
+Request method: GET
+Request Host: 127.0.0.1:8000
+Request URL: http://127.0.0.1:8000/api/v1/wallet/transactions
+Request headers: <Header('authorization': 'Token e1e6b81e-20d5-4504-a601-1b2a62c1eca5', 'user-agent': 'PostmanRuntime/7.32.3', 'accept': '*/*', 'postman-token': 'fd558eff-38ec-4974-8bc2-bd9d648c73d2', 'host': '127.0.0.1:8000', 'accept-encoding': 'gzip, deflate, br', 'connection': 'keep-alive')>
+Request data: None
+Request time: 2023-08-21 23:56:57.919934
+
+Request method: GET
+Request Host: 127.0.0.1:8000
+Request URL: http://127.0.0.1:8000/api/v1/wallet/transactions
+Request headers: <Header('authorization': 'Token e1e6b81e-20d5-4504-a601-1b2a62c1eca5', 'user-agent': 'PostmanRuntime/7.32.3', 'accept': '*/*', 'postman-token': 'de9052e8-29b3-4cb8-bcf2-974608b4b5cf', 'host': '127.0.0.1:8000', 'accept-encoding': 'gzip, deflate, br', 'connection': 'keep-alive')>
+Request data: None
+Request time: 2023-08-22 00:03:48.840886
+
+Request method: GET
+Request Host: 127.0.0.1:8000
+Request URL: http://127.0.0.1:8000/api/v1/wallet/transactions
+Request headers: <Header('authorization': 'Token e1e6b81e-20d5-4504-a601-1b2a62c1eca5', 'user-agent': 'PostmanRuntime/7.32.3', 'accept': '*/*', 'postman-token': '6dfdaf30-09ba-49e8-9dbe-6083b747e771', 'host': '127.0.0.1:8000', 'accept-encoding': 'gzip, deflate, br', 'connection': 'keep-alive')>
+Request data: None
+Request time: 2023-08-22 00:06:22.367844
+
+Request method: POST
+Request Host: 127.0.0.1:8000
+Request URL: http://127.0.0.1:8000/api/v1/init
+Request headers: <Header('content-type': 'application/json', 'user-agent': 'PostmanRuntime/7.32.3', 'accept': '*/*', 'postman-token': '9f46f178-ce75-4c22-b54c-4db156cb6855', 'host': '127.0.0.1:8000', 'accept-encoding': 'gzip, deflate, br', 'connection': 'keep-alive', 'content-length': '37')>
+Request data: {'customer_xid': 'testkey01'}
+Request time: 2023-08-22 00:09:03.597372
+
+Request method: POST
+Request Host: 127.0.0.1:8000
+Request URL: http://127.0.0.1:8000/api/v1/wallet
+Request headers: <Header('authorization': 'Token 961fec94-7aa0-4c3e-a8c8-3819549c75be', 'user-agent': 'PostmanRuntime/7.32.3', 'accept': '*/*', 'postman-token': '6e2f64e6-ddb8-4ef4-8405-882e60b32784', 'host': '127.0.0.1:8000', 'accept-encoding': 'gzip, deflate, br', 'connection': 'keep-alive', 'content-length': '0')>
+Request data: None
+Request time: 2023-08-22 00:09:35.707801
+
+Request method: GET
+Request Host: 127.0.0.1:8000
+Request URL: http://127.0.0.1:8000/api/v1/wallet
+Request headers: <Header('authorization': 'Token 961fec94-7aa0-4c3e-a8c8-3819549c75be', 'user-agent': 'PostmanRuntime/7.32.3', 'accept': '*/*', 'postman-token': 'f950ff9b-f2a0-46a5-aac9-be0027518941', 'host': '127.0.0.1:8000', 'accept-encoding': 'gzip, deflate, br', 'connection': 'keep-alive')>
+Request data: None
+Request time: 2023-08-22 00:12:29.492864
+
+Request method: GET
+Request Host: 127.0.0.1:8000
+Request URL: http://127.0.0.1:8000/api/v1/wallet/transactions
+Request headers: <Header('authorization': 'Token 961fec94-7aa0-4c3e-a8c8-3819549c75be', 'user-agent': 'PostmanRuntime/7.32.3', 'accept': '*/*', 'postman-token': 'a501d4b8-e854-4367-90a6-c947e25e921d', 'host': '127.0.0.1:8000', 'accept-encoding': 'gzip, deflate, br', 'connection': 'keep-alive')>
+Request data: None
+Request time: 2023-08-22 00:13:04.508715
+
+Request method: PATCH
+Request Host: 127.0.0.1:8000
+Request URL: http://127.0.0.1:8000/api/v1/wallet
+Request headers: <Header('authorization': 'Token 961fec94-7aa0-4c3e-a8c8-3819549c75be', 'user-agent': 'PostmanRuntime/7.32.3', 'accept': '*/*', 'postman-token': 'aec39a9f-242d-4402-8841-ca06643c7ea1', 'host': '127.0.0.1:8000', 'accept-encoding': 'gzip, deflate, br', 'connection': 'keep-alive', 'content-length': '0')>
+Request data: None
+Request time: 2023-08-22 00:13:23.488134
+
+Request method: POST
+Request Host: 127.0.0.1:8000
+Request URL: http://127.0.0.1:8000/api/v1/wallet
+Request headers: <Header('authorization': 'Token 961fec94-7aa0-4c3e-a8c8-3819549c75be', 'user-agent': 'PostmanRuntime/7.32.3', 'accept': '*/*', 'postman-token': 'f2834e4d-89c0-4ba2-b585-3c060510aa30', 'host': '127.0.0.1:8000', 'accept-encoding': 'gzip, deflate, br', 'connection': 'keep-alive', 'content-length': '0')>
+Request data: None
+Request time: 2023-08-22 00:13:47.366882
+
+Request method: POST
+Request Host: 127.0.0.1:8000
+Request URL: http://127.0.0.1:8000/api/v1/wallet
+Request headers: <Header('authorization': 'Token 961fec94-7aa0-4c3e-a8c8-3819549c75be', 'user-agent': 'PostmanRuntime/7.32.3', 'accept': '*/*', 'postman-token': 'eac9b872-7fb2-4c94-8b50-05e5d4e3f85a', 'host': '127.0.0.1:8000', 'accept-encoding': 'gzip, deflate, br', 'connection': 'keep-alive', 'content-length': '0')>
+Request data: None
+Request time: 2023-08-22 00:16:16.323323
+
+Request method: POST
+Request Host: 127.0.0.1:8000
+Request URL: http://127.0.0.1:8000/api/v1/wallet
+Request headers: <Header('authorization': 'Token 961fec94-7aa0-4c3e-a8c8-3819549c75be', 'user-agent': 'PostmanRuntime/7.32.3', 'accept': '*/*', 'postman-token': '2dfddfc3-9788-4fdb-9b13-5c16cb48d6c3', 'host': '127.0.0.1:8000', 'accept-encoding': 'gzip, deflate, br', 'connection': 'keep-alive', 'content-length': '0')>
+Request data: None
+Request time: 2023-08-22 00:16:51.098876
+
+Request method: POST
+Request Host: 127.0.0.1:8000
+Request URL: http://127.0.0.1:8000/api/v1/wallet
+Request headers: <Header('authorization': 'Token 961fec94-7aa0-4c3e-a8c8-3819549c75be', 'user-agent': 'PostmanRuntime/7.32.3', 'accept': '*/*', 'postman-token': '1effd4fd-4280-4047-bd1c-036c22814ea3', 'host': '127.0.0.1:8000', 'accept-encoding': 'gzip, deflate, br', 'connection': 'keep-alive', 'content-length': '0')>
+Request data: None
+Request time: 2023-08-22 00:17:28.122678
+
+Request method: POST
+Request Host: 127.0.0.1:8000
+Request URL: http://127.0.0.1:8000/api/v1/wallet
+Request headers: <Header('authorization': 'Token 961fec94-7aa0-4c3e-a8c8-3819549c75be', 'user-agent': 'PostmanRuntime/7.32.3', 'accept': '*/*', 'postman-token': '8f331152-8b35-49c8-9c38-c769346c221b', 'host': '127.0.0.1:8000', 'accept-encoding': 'gzip, deflate, br', 'connection': 'keep-alive', 'content-length': '0')>
+Request data: None
+Request time: 2023-08-22 00:18:08.539726
+
+Request method: POST
+Request Host: 127.0.0.1:8000
+Request URL: http://127.0.0.1:8000/api/v1/wallet
+Request headers: <Header('authorization': 'Token 961fec94-7aa0-4c3e-a8c8-3819549c75be', 'user-agent': 'PostmanRuntime/7.32.3', 'accept': '*/*', 'postman-token': 'ac95320e-fe74-4142-aced-5eafef437848', 'host': '127.0.0.1:8000', 'accept-encoding': 'gzip, deflate, br', 'connection': 'keep-alive', 'content-length': '0')>
+Request data: None
+Request time: 2023-08-22 00:18:23.234447
+
+Request method: POST
+Request Host: 127.0.0.1:8000
+Request URL: http://127.0.0.1:8000/api/v1/wallet
+Request headers: <Header('authorization': 'Token 961fec94-7aa0-4c3e-a8c8-3819549c75be', 'user-agent': 'PostmanRuntime/7.32.3', 'accept': '*/*', 'postman-token': '790cd83f-6677-4ffa-9672-6572342cbce4', 'host': '127.0.0.1:8000', 'accept-encoding': 'gzip, deflate, br', 'connection': 'keep-alive', 'content-length': '0')>
+Request data: None
+Request time: 2023-08-22 00:18:58.099249
+
+Request method: POST
+Request Host: 127.0.0.1:8000
+Request URL: http://127.0.0.1:8000/api/v1/wallet
+Request headers: <Header('authorization': 'Token 961fec94-7aa0-4c3e-a8c8-3819549c75be', 'user-agent': 'PostmanRuntime/7.32.3', 'accept': '*/*', 'postman-token': '35c3ddff-b7f3-4877-aa93-b53d1163a7f5', 'host': '127.0.0.1:8000', 'accept-encoding': 'gzip, deflate, br', 'connection': 'keep-alive', 'content-length': '0')>
+Request data: None
+Request time: 2023-08-22 00:20:11.925998
+
+Request method: POST
+Request Host: 127.0.0.1:8000
+Request URL: http://127.0.0.1:8000/api/v1/init
+Request headers: <Header('content-type': 'application/json', 'user-agent': 'PostmanRuntime/7.32.3', 'accept': '*/*', 'postman-token': '547bcc6f-9080-4baf-b568-a5051648646b', 'host': '127.0.0.1:8000', 'accept-encoding': 'gzip, deflate, br', 'connection': 'keep-alive', 'content-length': '37')>
+Request data: {'customer_xid': 'testkey02'}
+Request time: 2023-08-22 00:21:53.185110
+
+Request method: POST
+Request Host: 127.0.0.1:8000
+Request URL: http://127.0.0.1:8000/api/v1/wallet
+Request headers: <Header('authorization': 'Token 1e1d282a-1e61-419a-b2df-7a987261db58', 'user-agent': 'PostmanRuntime/7.32.3', 'accept': '*/*', 'postman-token': '3bcb218e-1589-4ad4-9cf3-f384f8dbccd5', 'host': '127.0.0.1:8000', 'accept-encoding': 'gzip, deflate, br', 'connection': 'keep-alive', 'content-length': '0')>
+Request data: None
+Request time: 2023-08-22 00:22:06.138913
+
+Request method: POST
+Request Host: 127.0.0.1:8000
+Request URL: http://127.0.0.1:8000/api/v1/wallet
+Request headers: <Header('authorization': 'Token 1e1d282a-1e61-419a-b2df-7a987261db58', 'user-agent': 'PostmanRuntime/7.32.3', 'accept': '*/*', 'postman-token': 'e31f8c36-4b4a-483d-bfe5-e8a26d3a4bcf', 'host': '127.0.0.1:8000', 'accept-encoding': 'gzip, deflate, br', 'connection': 'keep-alive', 'content-length': '0')>
+Request data: None
+Request time: 2023-08-22 00:23:19.062944
+
+Request method: POST
+Request Host: 127.0.0.1:8000
+Request URL: http://127.0.0.1:8000/api/v1/wallet
+Request headers: <Header('authorization': 'Token 1e1d282a-1e61-419a-b2df-7a987261db58', 'user-agent': 'PostmanRuntime/7.32.3', 'accept': '*/*', 'postman-token': '84e627aa-3cb9-4487-8eb1-f8a0da4d8e4f', 'host': '127.0.0.1:8000', 'accept-encoding': 'gzip, deflate, br', 'connection': 'keep-alive', 'content-length': '0')>
+Request data: None
+Request time: 2023-08-22 00:23:30.805729
+
+Request method: POST
+Request Host: 127.0.0.1:8000
+Request URL: http://127.0.0.1:8000/api/v1/wallet
+Request headers: <Header('authorization': 'Token 1e1d282a-1e61-419a-b2df-7a987261db58', 'user-agent': 'PostmanRuntime/7.32.3', 'accept': '*/*', 'postman-token': 'cb8323a0-fde9-4eb5-8ed6-d16185cab801', 'host': '127.0.0.1:8000', 'accept-encoding': 'gzip, deflate, br', 'connection': 'keep-alive', 'content-length': '0')>
+Request data: None
+Request time: 2023-08-22 00:29:16.839148
+
+Request method: POST
+Request Host: 127.0.0.1:8000
+Request URL: http://127.0.0.1:8000/api/v1/wallet
+Request headers: <Header('authorization': 'Token 1e1d282a-1e61-419a-b2df-7a987261db58', 'user-agent': 'PostmanRuntime/7.32.3', 'accept': '*/*', 'postman-token': '38d9d5fc-aa2c-4133-9cd8-064814f577c0', 'host': '127.0.0.1:8000', 'accept-encoding': 'gzip, deflate, br', 'connection': 'keep-alive', 'content-length': '0')>
+Request data: None
+Request time: 2023-08-22 00:31:35.984012
+
+Request method: POST
+Request Host: 127.0.0.1:8000
+Request URL: http://127.0.0.1:8000/api/v1/wallet
+Request headers: <Header('authorization': 'Token 1e1d282a-1e61-419a-b2df-7a987261db58', 'user-agent': 'PostmanRuntime/7.32.3', 'accept': '*/*', 'postman-token': '4aca8e85-5740-43f2-bbf3-6d0ff4fba7cd', 'host': '127.0.0.1:8000', 'accept-encoding': 'gzip, deflate, br', 'connection': 'keep-alive', 'content-length': '0')>
+Request data: None
+Request time: 2023-08-22 00:31:48.069771
+
+Request method: POST
+Request Host: 127.0.0.1:8000
+Request URL: http://127.0.0.1:8000/api/v1/wallet
+Request headers: <Header('authorization': 'Token 1e1d282a-1e61-419a-b2df-7a987261db58', 'user-agent': 'PostmanRuntime/7.32.3', 'accept': '*/*', 'postman-token': 'd664bd1a-7fcd-4546-a69b-7a6642f6f341', 'host': '127.0.0.1:8000', 'accept-encoding': 'gzip, deflate, br', 'connection': 'keep-alive', 'content-length': '0')>
+Request data: None
+Request time: 2023-08-22 00:33:25.148340
+
+Request method: POST
+Request Host: 127.0.0.1:8000
+Request URL: http://127.0.0.1:8000/api/v1/hyper_test
+Request headers: <Header('user-agent': 'PostmanRuntime/7.32.3', 'accept': '*/*', 'postman-token': '3ad37382-ce83-4635-83cd-c5628135f2fd', 'host': '127.0.0.1:8000', 'accept-encoding': 'gzip, deflate, br', 'connection': 'keep-alive', 'content-length': '0')>
+Request data: None
+Request time: 2023-08-22 01:21:24.729437
+
+Request method: POST
+Request Host: 127.0.0.1:8000
+Request URL: http://127.0.0.1:8000/api/v1/hyper_test
+Request headers: <Header('user-agent': 'PostmanRuntime/7.32.3', 'accept': '*/*', 'postman-token': '3a519d73-e905-4317-8125-aaf9068b9efc', 'host': '127.0.0.1:8000', 'accept-encoding': 'gzip, deflate, br', 'connection': 'keep-alive', 'content-length': '0')>
+Request data: None
+Request time: 2023-08-22 01:22:13.636724
+
+Request method: POST
+Request Host: 127.0.0.1:8000
+Request URL: http://127.0.0.1:8000/api/v1/hyper_test
+Request headers: <Header('user-agent': 'PostmanRuntime/7.32.3', 'accept': '*/*', 'postman-token': '835b4db8-3594-438f-ac5d-3f2741ab6fa0', 'host': '127.0.0.1:8000', 'accept-encoding': 'gzip, deflate, br', 'connection': 'keep-alive', 'content-length': '0')>
+Request data: None
+Request time: 2023-08-22 01:22:30.021469
+
+Request method: POST
+Request Host: 127.0.0.1:8000
+Request URL: http://127.0.0.1:8000/api/v1/hyper_test
+Request headers: <Header('user-agent': 'PostmanRuntime/7.32.3', 'accept': '*/*', 'postman-token': '63a19ea3-9f09-494d-80dc-4f6da14a7b05', 'host': '127.0.0.1:8000', 'accept-encoding': 'gzip, deflate, br', 'connection': 'keep-alive', 'content-length': '0')>
+Request data: None
+Request time: 2023-08-22 01:22:45.734818
+
+Request method: POST
+Request Host: 127.0.0.1:8000
+Request URL: http://127.0.0.1:8000/api/v1/hyper_test
+Request headers: <Header('user-agent': 'PostmanRuntime/7.32.3', 'accept': '*/*', 'postman-token': '864360a4-1b6c-44a1-ad4e-8e0a50e098c4', 'host': '127.0.0.1:8000', 'accept-encoding': 'gzip, deflate, br', 'connection': 'keep-alive', 'content-length': '0')>
+Request data: None
+Request time: 2023-08-22 01:22:57.720365
+
+Request method: POST
+Request Host: 127.0.0.1:8000
+Request URL: http://127.0.0.1:8000/api/v1/hyper_test
+Request headers: <Header('user-agent': 'PostmanRuntime/7.32.3', 'accept': '*/*', 'postman-token': '03db6f01-b868-4bfd-b635-2c930198410b', 'host': '127.0.0.1:8000', 'accept-encoding': 'gzip, deflate, br', 'connection': 'keep-alive', 'content-length': '0')>
+Request data: None
+Request time: 2023-08-22 01:23:44.962938
+
+Request method: POST
+Request Host: 127.0.0.1:8000
+Request URL: http://127.0.0.1:8000/api/v1/hyper_test
+Request headers: <Header('user-agent': 'PostmanRuntime/7.32.3', 'accept': '*/*', 'postman-token': '8657ebd0-069b-4df6-a340-669c9c860acc', 'host': '127.0.0.1:8000', 'accept-encoding': 'gzip, deflate, br', 'connection': 'keep-alive', 'content-length': '0')>
+Request data: None
+Request time: 2023-08-22 01:24:57.000685
+
+Request method: POST
+Request Host: 127.0.0.1:8000
+Request URL: http://127.0.0.1:8000/api/v1/hyper_test
+Request headers: <Header('user-agent': 'PostmanRuntime/7.32.3', 'accept': '*/*', 'postman-token': '03fb18b2-8014-4449-8932-8f2a2e42d91f', 'host': '127.0.0.1:8000', 'accept-encoding': 'gzip, deflate, br', 'connection': 'keep-alive', 'content-length': '0')>
+Request data: None
+Request time: 2023-08-22 01:32:55.646944
+
+Request method: POST
+Request Host: 127.0.0.1:8000
+Request URL: http://127.0.0.1:8000/api/v1/hyper_test
+Request headers: <Header('user-agent': 'PostmanRuntime/7.32.3', 'accept': '*/*', 'postman-token': 'ad904fff-4a36-4519-b6b3-48ab164615e2', 'host': '127.0.0.1:8000', 'accept-encoding': 'gzip, deflate, br', 'connection': 'keep-alive', 'content-length': '0')>
+Request data: None
+Request time: 2023-08-22 01:34:32.161153
+
+Request method: POST
+Request Host: 127.0.0.1:8000
+Request URL: http://127.0.0.1:8000/api/v1/hyper_test
+Request headers: <Header('user-agent': 'PostmanRuntime/7.32.3', 'accept': '*/*', 'postman-token': 'bd7c66f4-372e-476f-83a2-075099d5a51d', 'host': '127.0.0.1:8000', 'accept-encoding': 'gzip, deflate, br', 'connection': 'keep-alive', 'content-length': '0')>
+Request data: None
+Request time: 2023-08-22 01:36:13.952279
+
+Request method: POST
+Request Host: 127.0.0.1:8000
+Request URL: http://127.0.0.1:8000/api/v1/init
+Request headers: <Header('content-type': 'application/json', 'user-agent': 'PostmanRuntime/7.32.3', 'accept': '*/*', 'postman-token': 'ed20171e-9bea-42fa-97b7-c30a54c67df1', 'host': '127.0.0.1:8000', 'accept-encoding': 'gzip, deflate, br', 'connection': 'keep-alive', 'content-length': '37')>
+Request data: {'customer_xid': 'testkey03'}
+Request time: 2023-08-22 06:11:59.885083
+
+Request method: POST
+Request Host: 127.0.0.1:8000
+Request URL: http://127.0.0.1:8000/api/v1/wallet
+Request headers: <Header('authorization': 'Token 420849b9-fa47-431f-b698-48ff328a0020', 'user-agent': 'PostmanRuntime/7.32.3', 'accept': '*/*', 'postman-token': 'e470afea-8863-4868-9722-e586eb78b2cb', 'host': '127.0.0.1:8000', 'accept-encoding': 'gzip, deflate, br', 'connection': 'keep-alive', 'content-length': '0')>
+Request data: None
+Request time: 2023-08-22 06:12:29.432419
+
+Request method: POST
+Request Host: 127.0.0.1:8000
+Request URL: http://127.0.0.1:8000/api/v1/wallet
+Request headers: <Header('authorization': 'Token 420849b9-fa47-431f-b698-48ff328a0020', 'user-agent': 'PostmanRuntime/7.32.3', 'accept': '*/*', 'postman-token': '7c2b2498-b2e1-4b42-9910-6627f6a881e1', 'host': '127.0.0.1:8000', 'accept-encoding': 'gzip, deflate, br', 'connection': 'keep-alive', 'content-length': '0')>
+Request data: None
+Request time: 2023-08-22 06:13:30.023959
+
+Request method: POST
+Request Host: 127.0.0.1:8000
+Request URL: http://127.0.0.1:8000/api/v1/init
+Request headers: <Header('content-type': 'application/json', 'user-agent': 'PostmanRuntime/7.32.3', 'accept': '*/*', 'postman-token': '4d2663ae-5665-4784-92f6-db721cdc2b0e', 'host': '127.0.0.1:8000', 'accept-encoding': 'gzip, deflate, br', 'connection': 'keep-alive', 'content-length': '39')>
+Request data: {'customer_xid': 'testkey04'}
+Request time: 2023-08-22 06:13:50.725278
+
+Request method: POST
+Request Host: 127.0.0.1:8000
+Request URL: http://127.0.0.1:8000/api/v1/wallet
+Request headers: <Header('authorization': 'Token 93ae5faf-e27a-4a0e-a02e-cc59848fba12', 'user-agent': 'PostmanRuntime/7.32.3', 'accept': '*/*', 'postman-token': 'e900db64-051d-426f-b227-bee633a7456e', 'host': '127.0.0.1:8000', 'accept-encoding': 'gzip, deflate, br', 'connection': 'keep-alive', 'content-length': '0')>
+Request data: None
+Request time: 2023-08-22 06:14:09.215508
+
+Request method: POST
+Request Host: 127.0.0.1:8000
+Request URL: http://127.0.0.1:8000/api/v1/init
+Request headers: <Header('content-type': 'application/json', 'user-agent': 'PostmanRuntime/7.32.3', 'accept': '*/*', 'postman-token': '23ef8694-1aed-4af3-a6b0-33a388940d46', 'host': '127.0.0.1:8000', 'accept-encoding': 'gzip, deflate, br', 'connection': 'keep-alive', 'content-length': '39')>
+Request data: {'customer_xid': 'testkey05'}
+Request time: 2023-08-22 06:14:40.925938
+
+Request method: POST
+Request Host: 127.0.0.1:8000
+Request URL: http://127.0.0.1:8000/api/v1/wallet
+Request headers: <Header('authorization': 'Token 4b28f78b-772b-43e0-a550-a32888181b24', 'user-agent': 'PostmanRuntime/7.32.3', 'accept': '*/*', 'postman-token': 'b9260ce2-a08d-43f9-944f-adaefb8d6f56', 'host': '127.0.0.1:8000', 'accept-encoding': 'gzip, deflate, br', 'connection': 'keep-alive', 'content-length': '0')>
+Request data: None
+Request time: 2023-08-22 06:14:54.070030
+
+Request method: POST
+Request Host: 127.0.0.1:8000
+Request URL: http://127.0.0.1:8000/api/v1/wallet
+Request headers: <Header('authorization': 'Token 4b28f78b-772b-43e0-a550-a32888181b24', 'user-agent': 'PostmanRuntime/7.32.3', 'accept': '*/*', 'postman-token': '438bb61c-7441-41d9-9a19-ec1a4b498da2', 'host': '127.0.0.1:8000', 'accept-encoding': 'gzip, deflate, br', 'connection': 'keep-alive', 'content-length': '0')>
+Request data: None
+Request time: 2023-08-22 06:15:05.525264
+
+Request method: GET
+Request Host: 127.0.0.1:8000
+Request URL: http://127.0.0.1:8000/api/v1/wallet
+Request headers: <Header('authorization': 'Token 961fec94-7aa0-4c3e-a8c8-3819549c75be', 'user-agent': 'PostmanRuntime/7.32.3', 'accept': '*/*', 'postman-token': 'af271252-bd9f-420f-9fab-77f864a88c23', 'host': '127.0.0.1:8000', 'accept-encoding': 'gzip, deflate, br', 'connection': 'keep-alive')>
+Request data: None
+Request time: 2023-08-22 06:15:17.101849
+
+Request method: GET
+Request Host: 127.0.0.1:8000
+Request URL: http://127.0.0.1:8000/api/v1/wallet/transactions
+Request headers: <Header('authorization': 'Token 961fec94-7aa0-4c3e-a8c8-3819549c75be', 'user-agent': 'PostmanRuntime/7.32.3', 'accept': '*/*', 'postman-token': '718d5e37-7246-4d7c-906d-74748e3c2fba', 'host': '127.0.0.1:8000', 'accept-encoding': 'gzip, deflate, br', 'connection': 'keep-alive')>
+Request data: None
+Request time: 2023-08-22 06:15:28.559280
+
+Request method: POST
+Request Host: 127.0.0.1:8000
+Request URL: http://127.0.0.1:8000/api/v1/wallet/deposits
+Request headers: <Header('authorization': 'Token e1e6b81e-20d5-4504-a601-1b2a62c1eca5', 'content-type': 'application/json', 'user-agent': 'PostmanRuntime/7.32.3', 'accept': '*/*', 'postman-token': '5da70e69-9d30-4634-89d0-d6e416404160', 'host': '127.0.0.1:8000', 'accept-encoding': 'gzip, deflate, br', 'connection': 'keep-alive', 'content-length': '55')>
+Request data: {'amount': 100, 'reference_id': 'T0ddsad'}
+Request time: 2023-08-22 06:15:36.643519
+
+Request method: POST
+Request Host: 127.0.0.1:8000
+Request URL: http://127.0.0.1:8000/api/v1/wallet/deposits
+Request headers: <Header('authorization': 'Token 4b28f78b-772b-43e0-a550-a32888181b24', 'content-type': 'application/json', 'user-agent': 'PostmanRuntime/7.32.3', 'accept': '*/*', 'postman-token': '5ba0283c-3eb0-4f70-952d-0f6ce952ed8b', 'host': '127.0.0.1:8000', 'accept-encoding': 'gzip, deflate, br', 'connection': 'keep-alive', 'content-length': '55')>
+Request data: {'amount': 100, 'reference_id': 'T0ddsad'}
+Request time: 2023-08-22 06:17:53.351911
+
+Request method: GET
+Request Host: 127.0.0.1:8000
+Request URL: http://127.0.0.1:8000/api/v1/wallet/transactions
+Request headers: <Header('authorization': 'Token 961fec94-7aa0-4c3e-a8c8-3819549c75be', 'user-agent': 'PostmanRuntime/7.32.3', 'accept': '*/*', 'postman-token': 'c88ae8a6-34fb-43f5-be73-1589de321223', 'host': '127.0.0.1:8000', 'accept-encoding': 'gzip, deflate, br', 'connection': 'keep-alive')>
+Request data: None
+Request time: 2023-08-22 06:17:58.007806
+
+Request method: GET
+Request Host: 127.0.0.1:8000
+Request URL: http://127.0.0.1:8000/api/v1/wallet/transactions
+Request headers: <Header('authorization': 'Token 4b28f78b-772b-43e0-a550-a32888181b24', 'user-agent': 'PostmanRuntime/7.32.3', 'accept': '*/*', 'postman-token': '359a4f88-50f8-4845-964c-48c3f3084573', 'host': '127.0.0.1:8000', 'accept-encoding': 'gzip, deflate, br', 'connection': 'keep-alive')>
+Request data: None
+Request time: 2023-08-22 06:18:21.205090
+
+Request method: GET
+Request Host: 127.0.0.1:8000
+Request URL: http://127.0.0.1:8000/api/v1/wallet
+Request headers: <Header('authorization': 'Token 961fec94-7aa0-4c3e-a8c8-3819549c75be', 'user-agent': 'PostmanRuntime/7.32.3', 'accept': '*/*', 'postman-token': 'e2a10a5f-6d92-41ab-a080-69e0d4a8bba2', 'host': '127.0.0.1:8000', 'accept-encoding': 'gzip, deflate, br', 'connection': 'keep-alive')>
+Request data: None
+Request time: 2023-08-22 06:18:28.215386
+
+Request method: GET
+Request Host: 127.0.0.1:8000
+Request URL: http://127.0.0.1:8000/api/v1/wallet
+Request headers: <Header('authorization': 'Token 4b28f78b-772b-43e0-a550-a32888181b24', 'user-agent': 'PostmanRuntime/7.32.3', 'accept': '*/*', 'postman-token': '7b1b9ae6-397d-4c7b-9f6c-32ece8bf9755', 'host': '127.0.0.1:8000', 'accept-encoding': 'gzip, deflate, br', 'connection': 'keep-alive')>
+Request data: None
+Request time: 2023-08-22 06:19:29.157929
+
+Request method: PATCH
+Request Host: 127.0.0.1:8000
+Request URL: http://127.0.0.1:8000/api/v1/wallet
+Request headers: <Header('authorization': 'Token 4b28f78b-772b-43e0-a550-a32888181b24', 'user-agent': 'PostmanRuntime/7.32.3', 'accept': '*/*', 'postman-token': 'ed9b80d3-c0b3-464f-afbc-48ace96d5df5', 'host': '127.0.0.1:8000', 'accept-encoding': 'gzip, deflate, br', 'connection': 'keep-alive', 'content-length': '0')>
+Request data: None
+Request time: 2023-08-22 06:19:44.402819
+
+Request method: GET
+Request Host: 127.0.0.1:8000
+Request URL: http://127.0.0.1:8000/api/v1/wallet/transactions
+Request headers: <Header('authorization': 'Token 4b28f78b-772b-43e0-a550-a32888181b24', 'user-agent': 'PostmanRuntime/7.32.3', 'accept': '*/*', 'postman-token': 'fdf16002-2905-4de6-a4c9-b8e31e0830ec', 'host': '127.0.0.1:8000', 'accept-encoding': 'gzip, deflate, br', 'connection': 'keep-alive')>
+Request data: None
+Request time: 2023-08-22 06:20:07.159541
+
+Request method: GET
+Request Host: 127.0.0.1:8000
+Request URL: http://127.0.0.1:8000/api/v1/wallet
+Request headers: <Header('authorization': 'Token 4b28f78b-772b-43e0-a550-a32888181b24', 'user-agent': 'PostmanRuntime/7.32.3', 'accept': '*/*', 'postman-token': 'dc6f5dd0-819b-4873-af53-fba0f1d2da4a', 'host': '127.0.0.1:8000', 'accept-encoding': 'gzip, deflate, br', 'connection': 'keep-alive')>
+Request data: None
+Request time: 2023-08-22 06:20:13.761482
+
+Request method: POST
+Request Host: 127.0.0.1:8000
+Request URL: http://127.0.0.1:8000/api/v1/wallet/deposits
+Request headers: <Header('authorization': 'Token 4b28f78b-772b-43e0-a550-a32888181b24', 'content-type': 'application/json', 'user-agent': 'PostmanRuntime/7.32.3', 'accept': '*/*', 'postman-token': 'fdd007f2-5f6e-428a-a7ed-97037e7bbe6d', 'host': '127.0.0.1:8000', 'accept-encoding': 'gzip, deflate, br', 'connection': 'keep-alive', 'content-length': '55')>
+Request data: {'amount': 100, 'reference_id': 'T0ddsad'}
+Request time: 2023-08-22 06:20:19.776350
+

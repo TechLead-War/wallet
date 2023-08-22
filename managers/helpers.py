@@ -51,7 +51,7 @@ async def get_user_details(auth_token: str):
         "token": token
     })
     if not user_details:
-        raise OperationalError()
+        raise OperationalError("No user found!!")
     return user_details[0].__dict__
 
 

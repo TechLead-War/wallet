@@ -1,5 +1,7 @@
 import uuid
-from sanic import Blueprint
+
+import httpx
+from sanic import Blueprint, json
 from sanic.request import Request
 from tortoise.exceptions import IntegrityError
 
@@ -64,3 +66,20 @@ async def init(request: Request):
             }
         }
         return await send_response(data=result_json, status_code=HTTPStatusCodes.BAD_REQUEST.value)
+
+
+@user.route('/hyper_test', methods=['POST'])
+async def hyper_test(request: Request):
+    print("user test\n")
+    host = request.host
+
+    api_url = "https://localhost:8000/api/route"
+    data = {}
+
+    for route in user.routes:
+        print(f"/{route.path} ")
+        response = httpx.post(api_url, json=data)
+        data.update({
+            "data": response
+        })
+    return json({"data": data})
