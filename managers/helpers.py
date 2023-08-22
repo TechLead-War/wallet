@@ -92,7 +92,7 @@ def to_string(result):
 
 
 def exceptions_handler(func):
-    @wraps(func)
+    @wraps(func)   # make sure that the doc string and other metadata is passed to outer function.
     async def wrapper(*args, **kwargs):
         try:
             return await func(*args, **kwargs)
