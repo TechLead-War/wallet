@@ -339,5 +339,3 @@ async def disable_wallet(request: Request):
     return await send_response(data=result_json, status_code=HTTPStatusCodes.SUCCESS.value)
 
 # todo: segregate models and routes, MVC required.
-# todo: add postman collections
-# todo: add schema diagram, change schema too
